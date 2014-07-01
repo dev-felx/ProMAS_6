@@ -21,12 +21,12 @@
                 
                     <?php if($this->session->userdata('type') == 'coordinator' || $this->session->userdata('type') == 'supervisor'){?>
                     <div class="form-group">
-                        <label class="control-label">Select a project group</label>
+                        <label class="control-label">Select a project </label>
                         <select class="form-control" name="project" id="project">
                             <option></option>
                             <?php 
                                 foreach ($projects as $value) {
-                                    echo '<option value="'.$value['project_id'].'">Group ';
+                                    echo '<option value="'.$value['project_id'].'">Project ';
                                     echo $value['group_no'].' - '.$value['title'];
                                     echo '</option>';
                                 }

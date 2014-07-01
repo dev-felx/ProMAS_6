@@ -124,7 +124,7 @@ if($user=='student'){
                               <div class="panel-heading panel-danger">
                                   <h4 class="panel-title ">
                                       <a data-toggle="collapse" data-parent="#accordion" href="#<?php echo $row['group_no']; ?>">
-                                    <?php echo 'Group no:'.$row['group_no']. ' - Title:'. $row['title']; ?>
+                                    <?php echo 'Project no:'.$row['group_no']. ' - Title:'. $row['title']; ?>
                                     </a>
                                   </h4>
                               </div>

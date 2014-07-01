@@ -26,7 +26,7 @@
 <div class="container-fluid">
     <div class="row-fluid ">
         <div class="btn-group col-sm-3">
-        <button type="button" class="btn btn-primary ">View by Group</button>
+        <button type="button" class="btn btn-primary ">View by Project</button>
         <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
             <span class="caret"></span>
             <span class="sr-only">Toggle Dropdown</span>

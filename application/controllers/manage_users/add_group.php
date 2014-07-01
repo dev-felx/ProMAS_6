@@ -83,7 +83,7 @@ class Add_group extends CI_Controller{
                 if($user == 'student'){
                     foreach($content as $field){
                         $values = array(
-                                'group_no' =>$field['Group no'],
+                                'group_no' =>$field['Project no'],
                                 'space_id'=>$this->session->userdata['space_id']
                             );
                         $table = 'student_projects';
@@ -107,7 +107,7 @@ class Add_group extends CI_Controller{
                         //checking if the student exist in the db
                         $result = $this->manage_users->check_value_exists($table, $values);
                         $this->load->model('project_model');
-                        $result_project = $this->project_model->get_project_id($field['Group no']);
+                        $result_project = $this->project_model->get_project_id($field['Project no']);
                         //if student does not exist
                         if(!$result){
                             $values = array(
@@ -116,7 +116,7 @@ class Add_group extends CI_Controller{
                                 'registration_no' =>$field['Registration no'] ,
                                 'password' =>md5(strtolower($field['Lastname'])) ,
                                 'email' => $field['Email'],
-                                'group_no' =>$field['Group no'],
+                                'group_no' =>$field['Project no'],
                                 'project_id' =>$result_project[0]['project_id'],
                                 'space_id'=>$this->session->userdata['space_id'],
                             );
