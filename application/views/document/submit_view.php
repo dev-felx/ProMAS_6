@@ -179,7 +179,6 @@ $('body').on('hidden.bs.modal', '.modal', function () {
                 </div>
                 <div class="modal-body">
                    <?php foreach ($documents as $row){
-                echo '<div>';
                 
                    if($row[0]['doc_status'] == 2){//skip rows with shared files
                        foreach ($row[0] as $key => $value) {
@@ -191,7 +190,8 @@ $('body').on('hidden.bs.modal', '.modal', function () {
                        //echo $doc_details;
                    } ?>
                    <p><a type="button" href="<?php echo site_url(); ?>/project/file/download/<?php echo base64_encode($row[0]['rev_file_path']);  ?>" class="action_view btn_edge btn-link btn btn-primary btn-xs"><span class="glyphicon glyphicon-download push_right_bit"></span>Download</a></p>
-                   <div class="hr"><hr/></div></div>
+                   <div class="hr"><hr/></div>
+             
                    <?php
                    }
                    }
@@ -202,7 +202,7 @@ $('body').on('hidden.bs.modal', '.modal', function () {
                 </div>
             </div>
         </div>
-
+</div>
 <script>
 $(document).ready(function(){
     
