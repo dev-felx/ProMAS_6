@@ -106,12 +106,12 @@
                                 <label for="receiver">Send to</label><?php show_form_error('receiver'); ?>
                                 <?php
                                     if($this->session->userdata['type']=='coordinator'){
-                                        echo '<div class="checkbox"><label><input name="group" type="checkbox" value="All groups">All groups</label></div>';
+                                        echo '<div class="checkbox"><label><input name="group" type="checkbox" value="All groups">All projects</label></div>';
                                         
                                     } else if($this->session->userdata['type']=='supervisor'){
 
-                                        echo '<div class="checkbox"><label><input name="group" type="checkbox" value="All groups">All groups</label></div>';
-                                        echo '<div class="checkbox"><label><input name="group" id="choose_group" type="checkbox" value="Choose groups">Choose groups</label></div>';
+                                        echo '<div class="checkbox"><label><input name="group" type="checkbox" value="All groups">All projects</label></div>';
+                                        echo '<div class="checkbox"><label><input name="group" id="choose_group" type="checkbox" value="Choose groups">Choose projects</label></div>';
                                     }
                                     ?>
                             </div>
@@ -163,11 +163,11 @@
                         <label for="receiver">Share with</label><?php show_form_error('receiver'); ?>
                         <?php
                             if($this->session->userdata['type']=='coordinator'){
-                                echo '<div class="checkbox"><label><input name="group" type="checkbox" value="All groups">All groups</label></div>';
+                                echo '<div class="checkbox"><label><input name="group" type="checkbox" value="All groups">All projects</label></div>';
 //                                echo '<div class="checkbox"><label><input name="group" type="checkbox" value="All supervisors">All supervisors</label></div>';
                             } else if($this->session->userdata['type']=='supervisor'){
-                                echo '<div class="radio"><label><input class="group" name="group" type="radio" value="All groups">All groups</label></div>';
-                                echo '<div class="radio"><label><input class="group" name="group" id="choose_group_share" type="radio" value="Choose groups">Choose groups</label></div>';
+                                echo '<div class="radio"><label><input class="group" name="group" type="radio" value="All groups">All projects</label></div>';
+                                echo '<div class="radio"><label><input class="group" name="group" id="choose_group_share" type="radio" value="Choose groups">Choose projects</label></div>';
                             }
                             ?>
                     </div>

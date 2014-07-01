@@ -42,7 +42,7 @@ Click on event to edit or delete. ">Help <span class="glyphicon glyphicon-questi
     <!-- modified by Minja Junior -->
     <?php if($this->session->userdata('type') == 'supervisor'){?>
     <div class="btn-group pull-right push_right_bit">
-        <button type="button" class="btn btn-success">View by Group</button>
+        <button type="button" class="btn btn-success">View by Project</button>
         <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
             <span class="caret"></span>
             <span class="sr-only">Toggle Dropdown</span>
