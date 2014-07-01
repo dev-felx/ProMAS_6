@@ -38,7 +38,7 @@ class Announce extends CI_Controller{
             //prep view
             $data['views'] = array('project/announce_view');
             $data['title'] = 'sProMAS | Announcements';
-            $data['receiver'] = array('All groups','Choose groups');
+            $data['receiver'] = array('All Projects','Choose Projects');
             $data['groups'] = $this->announcement_model->get_grps($this->session->userdata['user_id']);
             
             page_load($data);

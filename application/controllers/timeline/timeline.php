@@ -217,7 +217,7 @@ class Timeline extends CI_Controller {
             //'sup_id'=> $this->project_model->get_supervisor($this->session->userdata['project_id']),
             //'project_id'=>  $this->session->userdata['project_id'],
         );
-        
+        $data['receiver'] = array('All project calenders','Choose project calenders');
         $data['test'] = $this->event_model->list_events($values);
         $data['views']= array('timeline/event_view');
         page_load($data);

@@ -22,12 +22,12 @@
                     <div class="form-group">
                         <label>Export For: </label>
                         <select class="form-control" id="grp" name="grp">
-                            <option value="0">All My Groups</option>
-                            <option value="1">Choose Groups</option>
+                            <option value="0">All My Projects</option>
+                            <option value="1">Choose Projects</option>
                        </select>
                     </div>
                     <div class="form-group">
-                        <label for="receiver">Choose Groups</label>
+                        <label for="receiver">Choose Projects</label>
                         <select multiple="multiple" id="receiver" class="form-control" name="receiver">
                             <?php
                                 foreach ($projects as $value) {
@@ -62,12 +62,12 @@
                     <div class="form-group">
                         <label>Export For: </label>
                         <select class="form-control" id="grp2" name="grp2">
-                            <option value="0">All My Groups</option>
-                            <option value="1">Choose Groups</option>
+                            <option value="0">All Projects</option>
+                            <option value="1">Choose Projects</option>
                        </select>
                     </div>
                     <div class="form-group">
-                        <label for="receiver2">Choose Groups</label>
+                        <label for="receiver2">Choose Projects</label>
                         <select multiple="multiple" id="receiver2" class="form-control" name="receiver2">
                             <?php
                                 foreach ($projects as $value) {
