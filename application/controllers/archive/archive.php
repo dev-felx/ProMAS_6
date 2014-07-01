@@ -66,7 +66,6 @@ class Archive extends CI_Controller {
     }
     
     public function download($file_path){
-        
         $this->load->helper('file');
         $this->load->helper('download');
         

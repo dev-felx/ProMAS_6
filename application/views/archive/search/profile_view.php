@@ -43,9 +43,9 @@
                             <?php if(!isset($docu['error'])){
                                 foreach ($docu as $d){
                                     if ($this->session->userdata('archive_level') == 2 && $d->document_name == 'Final Report' ){?>
-                                        <li class="list-group-item list-group-item-info"><?php print $d->document_name; ?><a href="<?php echo site_url(); ?>/archive/archive/download/<?php print $a->document_path; ?>" class="btn btn-xs btn-primary pull-right">Download</a></li>
+                                <li class="list-group-item list-group-item-info"><?php print $d->document_name; ?><a href="<?php echo site_url(); ?>/archive/archive/download/<?php print base64_encode($a->document_path); ?>" class="btn btn-xs btn-primary pull-right">Download</a></li>
                                     <?php }else { ?>
-                                        <li class="list-group-item list-group-item-info"><?php print $d->document_name; ?><a href="<?php echo site_url(); ?>/archive/archive/download/<?php print $a->document_path; ?>" class="btn btn-xs btn-primary pull-right">Download</a></li>
+                                        <li class="list-group-item list-group-item-info"><?php print $d->document_name; ?><a href="<?php echo site_url(); ?>/archive/archive/download/<?php print base64_encode($a->document_path); ?>" class="btn btn-xs btn-primary pull-right">Download</a></li>
                                     <?php } ?>
                                 <?php } 
                             } else {?>

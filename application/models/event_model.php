@@ -59,11 +59,11 @@ class Event_model extends CI_Model{
     
     public function upcoming_events($data){
         if($data['type'] == 'coordinator'){
-            $where = "space_id=".$data['space_id']." AND creator_type='".$data['type']."' LIMIT 4";
+            $where = "space_id=".$data['space_id']." AND start > CURDATE() AND creator_type='".$data['type']."' LIMIT 4";
         } elseif($data['type'] == 'supervisor'){
-            $where = "space_id=".$data['space_id']." AND creator_type='".$data['type']."' OR creator_type = 'coordinator' LIMIT 4";
+            $where = "space_id=".$data['space_id']." AND start > CURDATE() AND creator_id=".$this->session->userdata('user_id')." AND creator_type='".$data['type']."' OR creator_type = 'coordinator' AND start > CURDATE() LIMIT 4";
         }elseif($data['type'] == 'student'){
-            $where = "space_id=".$data['space_id']." AND creator_type='".$data['type']."' OR creator_type = 'coordinator' LIMIT 4";
+            $where = "space_id=".$data['space_id']." AND start > CURDATE() AND creator_type='".$data['type']."' OR creator_type = 'coordinator' AND start > CURDATE() LIMIT 4";
         }
         $this->db->where($where,NULL, FALSE);
         $res = $this->db->get('events');
