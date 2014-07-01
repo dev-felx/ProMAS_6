@@ -1,0 +1,323 @@
+/*
+ * Author: Tesha
+ * Description: coantains css that tweaks bootstrap framework, affects all elements.
+ * Comments: Read only,Consult.
+*/
+
+body{
+    background-color: #fefefe;
+    padding-top: 60px;
+}
+
+/*Moz link bug*/
+:focus {outline:none !important;}
+::-moz-focus-inner {border:0 !important;;}
+/* Common classes*/
+.push_right_bit{
+    margin-right: 5px;
+}
+
+.push_left_bit{
+    margin-left: 5px;
+}
+
+.no_pad{
+    padding: 0px;
+}
+.no_mag{
+    padding: 0px;
+}
+
+.top_10{
+    margin-top: 10px;
+}
+
+.bottom_10{
+    margin-bottom: 10px
+}
+
+.btn-circle {
+    border-radius: 20px;
+    font-size: 25px;
+    height: 40px;
+    padding: 3px 0;
+    text-align: center;
+    width: 40px;
+}
+
+
+/* Navbar badges */
+.navbar-nav .badge{
+    background-color: #fff;
+    color: #0093d0;  
+    border: #fff solid 1px;
+}
+
+.navbar-nav li:hover .badge{
+    border: #0093d0 solid 1px;
+}
+.navbar-nav li.open .badge{
+    border: #0093d0 solid 1px;
+}
+
+/*Navbar toggle*/
+.navbar-toggle{
+    background-color: #f6f6f6;
+}
+
+
+/* Mobile view tweaks */
+@media ( max-width : 767px) {
+    .navbar-fixed-top {
+        position: relative;
+        top: auto;
+    }
+    .navbar-collapse {
+        max-height: none;
+    }
+    body {
+        padding-top:0px;
+        margin: 0;
+    }
+    
+    /*Navbar dropdown in mobile*/
+    #announcement > a, #notification > a{
+        border-bottom: #0093d0 solid 1px;
+    }
+    #announcement > .dropdown-menu, #notification > .dropdown-menu{
+        background-color: #fff;    
+    }
+    #announcement > .dropdown-menu a, #notification > .dropdown-menu a{
+        color: #000 !important;   
+    }
+    .navbar-nav .divider{
+        background-color: #0093d0 !important;
+    }
+ 
+    #bs-example-navbar-collapse-1 .dropdown-menu > li > a{
+        white-space: normal;
+    }
+    
+    .badge_nav_ie{
+        float: right;
+    }   
+}
+
+
+/* Desktop view tweaks */
+@media ( min-width : 768px) {
+/* Navbar dropdown */
+    .navbar-nav .dropdown-menu a{
+        color: #0093d0 !important;
+    }
+}
+
+
+/*Side bar tweaks*/
+#accordion .panel-heading{
+    height: 40px;
+    border: #DDDDDD solid 1px !important;
+    background-color: #0093D0 !important;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+#accordion h4 a{
+    text-decoration: none !important;
+}
+
+#accordion .panel-body{
+    border-top: none !important;
+    padding: 5px;
+}
+
+#accordion .panel-default{
+    border: none !important;
+    box-shadow: none !important;
+}
+
+#accordion .panel-body  .list-group {
+    margin-bottom: 0px !important;
+}
+
+#accordion .panel-heading h4{
+    color: #FFFFFF !important;    
+}
+
+#accordion .list-group-item:hover{
+    border-left: #0093D0 solid 4px;
+}
+#accordion .list-group-item a{
+    color: #000;
+    text-decoration: none;
+}
+
+/*Role Box*/
+#role_box{
+    height: 55px;
+    padding: 5px;
+    border-radius: 4px;
+}
+#role_btn {
+    margin-bottom: 5px;
+    margin-top: 3px;
+    font-size: 120%;
+}
+
+#cng_btn{
+    cursor: pointer;
+}
+
+/* To be shifted to main*/
+
+#work_space{
+    border-left: #ccc solid 1px;
+    
+}
+
+hr{
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+/*Announcements*/
+.ann_box{
+    border-top-left-radius: 0px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius:  0px;
+    border-bottom-right-radius: 3px;
+    padding-left: 0px;
+    border: #cccccc solid 1px;
+    border-left: #4CAE4C solid 3px;
+    height: 90px;
+    margin-bottom: 10px;
+}
+.ann_box_unread{
+    border-top-left-radius: 0px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius:  0px;
+    border-bottom-right-radius: 3px;
+    padding-left: 0px;
+    border: #cccccc solid 1px;
+    border-left: #f0ad4e solid 3px;
+    height: 90px;
+    margin-bottom: 10px;
+}
+
+.ann_box_pre{
+    border-right: #bbbbbb solid 1px; 
+    min-height: 90px; 
+    padding: 10px 0px 0px 5px; 
+}
+.ann_box_pre > div{
+    padding-top: 2px; 
+
+}
+.ann_title{
+    font-size: 130%; 
+    margin-bottom: 0px;
+}
+
+#send_annonce{
+    border: #ddd solid 1px;
+    border-radius: 2px;
+    padding: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+#ann_footer{
+    background-color: #eee;
+    padding: 5px;
+}
+
+#read > div:nth-child(odd){
+    background-color: #f9f9f9;
+}
+#unread > div:nth-child(odd){
+    background-color: #f9f9f9;
+}
+
+#head_ann{
+      min-width: 250px;
+  }
+    #head_ann > li{
+      margin: 2px;
+      border: #cccccc solid 1px;
+      border-radius: 2px;
+      color: #245269;
+      padding-left: 10px;
+      cursor: pointer;
+    } 
+    .tito{
+      text-decoration: underline;
+    }
+ /*notification*/
+ .not_box{
+    border-top-left-radius: 0px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius:  0px;
+    border-bottom-right-radius: 3px;
+    padding-left: 10px;
+    border: #cccccc solid 1px;
+    border-left: #4CAE4C solid 3px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+.not_box_unread{
+    border-top-left-radius: 0px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius:  0px;
+    border-bottom-right-radius: 3px;
+    padding-left: 10px;
+    border: #cccccc solid 1px;
+    border-left: #f0ad4e solid 3px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+#head_not{
+      min-width: 250px;
+  }
+#head_not > li{
+  margin: 2px;
+  border: #cccccc solid 1px;
+  border-radius: 2px;
+  color: #245269;
+  padding-left: 10px;
+  cursor: pointer;
+} 
+.tito_nt{
+  text-decoration: underline;
+}
+
+/*assessment*/
+.stu_btn{
+    cursor: pointer;
+}
+
+.stu_btn:hover{
+    background-color: #0093D0;
+    color: #FFFFFF;
+}
+
+.stu_btn_active{
+    background-color: #0093D0 !important;
+    color: #FFFFFF !important;
+}
+
+/*Archive access*/
+#add_single{
+    border: solid #0093D0 1px;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+/*Footer styles*/
+
+#foot{
+    height: 40px;
+    margin-top: 20px;
+}
+
+/*Group management css*/

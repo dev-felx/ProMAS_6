@@ -1,0 +1,149 @@
+/*
+*Author: Felix Devid
+*Descrption: login box,header,body, button
+*/
+#login_box{
+    min-height: 270px;
+    padding-left: 0px;
+    padding-top: 15px;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0,0,0, .5);   
+    background-color: white;
+}
+
+
+#header-content{
+    height: 100px;
+    width: 100%;
+    background: linear-gradient(to bottom,#0093D0 ,#0093D0,#FFFFFF);
+    margin-bottom: 40px;
+}
+
+
+ .btn-default {
+    background: none repeat scroll 0 0 #0093D0;
+    border-radius: 4px;
+    color: #FFFFFF;
+    margin-left: 10px;
+}
+
+
+body{
+ background-color: white;   
+}
+
+#add_user_form{
+    min-height: 300px;
+    background: white;
+    border-radius: 2px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5) inset;
+    
+}
+
+#reg_form{
+    background: white;
+    border-radius: 2px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.5) inset;
+    margin-top: 20px;
+    padding: 19px
+}
+
+#upload_file{
+    padding-top: 15px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5) inset;
+}
+
+#file_list{
+    
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5) inset;
+    
+}
+
+#add_timeline{
+    min-height: 300px;
+    padding-top: 15px;
+    background: white;
+    border-radius: 2px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, .5) inset;
+    
+    
+}
+
+.login_footer{
+    
+    margin-top: 0px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    
+}
+
+#flip_req,#flip_share{
+    padding: 5px; 
+    text-align:center;
+    background-color:#e5eecc;
+    border:solid 1px #c3c3c3;
+    margin-bottom: 10px;
+    margin-top: -15px;
+}
+
+#doc_form{
+    min-height: 300px;
+    padding-top: 15px;
+    background: white;
+    border-radius: 2px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, .5) inset;
+    
+}
+
+
+
+
+/*Archive header css*/
+#arch_head{
+    padding: 10px 0px 0px 0px;
+    height: 55px !important;
+}
+
+.btn-cyc {
+    border-radius: 20px;
+    font-size: 20px;
+    height: 35px;
+    text-align: center;
+    width: 35px;
+    color: #0093D0;
+}
+
+.push_left_bit{
+    margin-left: 5px;
+}
+
+#slide_box{
+    z-index: 100;
+    position: fixed;
+    right: 10px;
+    top: 55px;
+    padding: 0px;
+    
+}
+#slide_box > .alert{
+    padding: 10px !important;
+}
+
+#arch_name{
+    margin-top: 7px;
+}
+
+#add_single{
+    border: #0093D0 solid 1px;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+#login_cont{
+    cursor: pointer;
+}
+
+
